@@ -1,0 +1,4 @@
+---
+balancer_vhosts:
+    - { name: "example1",  upstreams: ['myserver1.com', 'myserver2.com' ] }
+    - { name: "example2",  upstreams: ['myserver1.com', 'myserver2.com' ] }
