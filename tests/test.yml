@@ -7,4 +7,4 @@
         - { name: "my.project.com",  upstreams: ['node01.myproject.com', 'node02.myproject.com' ] }
 
   roles:
-      - { role: balancer }
+      - { role: ansible-balancer }
