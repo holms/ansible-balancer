@@ -4,7 +4,7 @@
 
   vars:
       - balancer_vhosts:
-        - { name: "my.project.com",  upstreams: ['node01.myproject.com', 'node02.myproject.com' ] }
+        - { name: "my.project.com",  upstreams: ['google.com', 'facebook.com' ] }
 
   roles:
       - { role: ansible-balancer }
