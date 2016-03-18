@@ -1,0 +1,19 @@
+---
+- name: Remove default config
+  file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+- name: Copy vhosts to place
+  template:
+    src: vhosts.j2
+    dest: "/etc/nginx/sites-enabled/{{ item.name }}.conf"
+  with_items: balancer_vhosts
+  notify: restart nginx
+
+- name: Enable init.d
+  service:
+    name: nginx
+    state: started
+    enabled: yes
+

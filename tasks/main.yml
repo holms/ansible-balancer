@@ -1,4 +1,3 @@
 ---
-- include: nginx.yml
-
-
+- include: install.yml
+- include: configure.yml

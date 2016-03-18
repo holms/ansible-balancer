@@ -2,3 +2,8 @@
 balancer_vhosts:
     - { name: "example1",  upstreams: ['myserver1.com', 'myserver2.com' ] }
     - { name: "example2",  upstreams: ['myserver1.com', 'myserver2.com' ] }
+balancer_ssl_key: ""
+balancer_ssl_crt: ""
+balancer_ssl_pem: ""
+balancer_ssl_trusted_crt: ""
+balancer_ssl_trusted_key: ""
